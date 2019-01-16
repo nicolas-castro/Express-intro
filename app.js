@@ -16,7 +16,8 @@ app.get('/', (reqeust, response, next) => {
 }) 
 
 app.get('/cat', (req, res, next) => {
-  res.send('<img src="/images/cool-cat.jpg">')
+  //res.send('<img src="/images/cool-cat.jpg">')
+  res.sendFile(__dirname + '/views/cat.html')
 })
 
 
